@@ -9,7 +9,7 @@ Add **Filterable** trait to your eloquent model.
 Create **$filterable** property with mappings corresponding to 
 how model attributes should be filtered.
 
-```
+```php
 class Event extends Model
 {
     use Filterable;
@@ -30,7 +30,7 @@ class Event extends Model
 **Controller**
 
 Just pass Request params to filter as array.
-```
+```php
 public function index(Request $request): JsonResponse
 {
     $events = Event::filter($request->all())->paginate(); // or get(), first() or whatever
