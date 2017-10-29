@@ -1,0 +1,27 @@
+{
+    "name": "san4io/eloquent-filter",
+    "description": "Laravel Eloquent Filter Package",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "5.*"
+    },
+    "author": {
+        "name": "Aleksandr Golubovskij",
+        "email": "alegol90@gmail.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "San4io\\EloquentFilter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "San4io\\EloquentFilter\\EloquentFilterServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
