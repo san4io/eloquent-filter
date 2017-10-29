@@ -10,7 +10,7 @@ trait Filterable
     /**
      * @param Builder $query
      * @param array $data
-     * @return \Illuminate\Database\Query\Builder
+     * @return Builder
      */
     public function scopeFilter(Builder $query, array $data = [])
     {
