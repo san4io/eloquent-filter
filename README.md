@@ -1,4 +1,6 @@
 # EloquentFilter
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/san4io/eloquent-filter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/san4io/eloquent-filter/?branch=master)
+
 Package to filter your Eloquent Model simply and elegantly.
 
 ## Usage
