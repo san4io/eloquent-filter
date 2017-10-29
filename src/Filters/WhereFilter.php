@@ -2,7 +2,7 @@
 
 namespace San4io\EloquentFilter\Filters;
 
-use Illuminate\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Builder;
 
 class WhereFilter extends AbstractFilter
 {
@@ -14,7 +14,7 @@ class WhereFilter extends AbstractFilter
     public function filter($key, $value)
     {
         if (is_array($value)) {
-            $this->model->whereIn($key, $value);
+            return $this->model->whereIn($key, $value);
         }
 
         return $this->model->where($key, $value);

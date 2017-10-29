@@ -3,7 +3,7 @@
 namespace San4io\EloquentFilter\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-use San4io\EloquentFilter\Filters\FilterInterface;
+use San4io\EloquentFilter\Filters\AbstractFilter;
 
 trait Filterable
 {
@@ -18,7 +18,7 @@ trait Filterable
 
         foreach ($data as $key => $value) {
             if (in_array($key, array_keys($filters))) {
-                /** @var FilterInterface $filter */
+                /** @var AbstractFilter $filter */
                 $filter = new $filters[$key]($query);
                 $query = $filter->filter($key, $value);
             }

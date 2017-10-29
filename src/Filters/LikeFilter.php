@@ -2,7 +2,7 @@
 
 namespace San4io\EloquentFilter\Filters;
 
-use Illuminate\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Builder;
 
 class LikeFilter extends AbstractFilter
 {

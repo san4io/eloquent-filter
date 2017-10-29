@@ -8,20 +8,19 @@
 
 namespace San4io\EloquentFilter\Filters;
 
-
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Builder;
 
 abstract class AbstractFilter implements FilterInterface
 {
     /**
-     * @var Builder|Model
+     * @var Builder
      */
     protected $model;
 
     /**
      * AbstractFilter constructor.
-     * @param Model|Builder $model
+     * @param Builder $model
      */
     public function __construct($model)
     {
