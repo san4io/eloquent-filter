@@ -11,7 +11,7 @@ class WhereFilter extends AbstractFilter
      * @param array|int $value
      * @return Builder
      */
-    public function filter($key, $value)
+    public function filter(string $key, $value): Builder
     {
         if (is_array($value)) {
             return $this->model->whereIn($key, $value);

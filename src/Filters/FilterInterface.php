@@ -11,5 +11,5 @@ interface FilterInterface
      * @param mixed $value
      * @return Builder
      */
-    public function filter($key, $value);
+    public function filter(string $key, $value): Builder;
 }

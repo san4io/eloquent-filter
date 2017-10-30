@@ -11,8 +11,11 @@ class BetweenFilter extends AbstractFilter
      * @param array $value
      * @return Builder
      */
-    public function filter($key, $value)
+    public function filter(string $key, $value): Builder
     {
-        return $this->model->whereBetween($key, [$value['from'], $value['till']]);
+        return $this->model->whereBetween($key, [
+            $value['from'],
+            $value['till']
+        ]);
     }
 }

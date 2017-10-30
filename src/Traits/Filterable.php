@@ -12,7 +12,7 @@ trait Filterable
      * @param array $data
      * @return Builder
      */
-    public function scopeFilter(Builder $query, array $data = [])
+    public function scopeFilter(Builder $query, array $data = []): Builder
     {
         $filters = $this->getFilterable();
 
