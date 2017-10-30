@@ -3,6 +3,17 @@
 
 Package to filter your Eloquent model simply and elegantly.
 
+## Requirements
+
+* "php": ">=7.1",
+* "illuminate/support": "5.*",
+* "illuminate/database": "5.*"
+
+## Installation
+```sh
+composer require san4io/eloquent-filter
+```
+
 ## Usage
 **Model**
 
