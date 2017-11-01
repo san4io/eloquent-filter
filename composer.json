@@ -17,6 +17,11 @@
             "San4io\\EloquentFilter\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -26,6 +31,7 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "phpunit/phpunit": "^6.4"
+        "phpunit/phpunit": "^6.4",
+        "orchestra/testbench": "~3.0"
     }
 }
