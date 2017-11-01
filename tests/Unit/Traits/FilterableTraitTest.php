@@ -4,6 +4,7 @@ namespace Tests\Traits;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
+use San4io\EloquentFilter\Filters\WhereFilter;
 use Tests\Models\Event;
 use Tests\TestCase;
 
@@ -67,6 +68,32 @@ class FilterableTraitTest extends TestCase
         /** @var Collection $events */
         $events = Event::filter($filter)->get();
         $this->assertEquals($expected, $events->count());
+    }
+
+    /**
+     *
+     */
+    public function testFilterSetterWithResults()
+    {
+        $event = new Event();
+        $event->setFilterable(['title' => WhereFilter::class]);
+
+        /** @var Collection $events */
+        $events = $event->filter(['title' => 'Health Check'])->get();
+        $this->assertEquals(1, $events->count());
+    }
+
+    /**
+     *
+     */
+    public function testFilterSetterWithoutResults()
+    {
+        $event = new Event();
+        $event->setFilterable(['title' => WhereFilter::class]);
+
+        /** @var Collection $events */
+        $events = $event->filter(['title' => 'Health Che'])->get();
+        $this->assertEquals(0, $events->count());
     }
 
     /**
