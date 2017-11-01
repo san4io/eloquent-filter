@@ -2,6 +2,7 @@
 [![Build Status](https://scrutinizer-ci.com/g/san4io/eloquent-filter/badges/build.png?b=master)](https://scrutinizer-ci.com/g/san4io/eloquent-filter/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/san4io/eloquent-filter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/san4io/eloquent-filter/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/san4io/eloquent-filter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/san4io/eloquent-filter/?branch=master)
+
 Package to filter your Eloquent model simply and elegantly.
 
 ## Requirements
