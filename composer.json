@@ -19,7 +19,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "San4io\\Tests\\": "tests/"
+            "San4io\\EloquentFilter\\Tests\\": "tests/"
         }
     },
     "extra": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace San4io\Tests;
+namespace San4io\EloquentFilter\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 

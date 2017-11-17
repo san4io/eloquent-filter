@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Models;
+namespace San4io\EloquentFilter\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use San4io\EloquentFilter\Filters\BetweenFilter;
