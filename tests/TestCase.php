@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace San4io\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 

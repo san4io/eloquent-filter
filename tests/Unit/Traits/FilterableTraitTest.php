@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\Traits;
+namespace San4io\Tests\Traits;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use San4io\EloquentFilter\Filters\WhereFilter;
+use San4io\Tests\TestCase;
 use Tests\Models\Event;
-use Tests\TestCase;
 
 class FilterableTraitTest extends TestCase
 {

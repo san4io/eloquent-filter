@@ -19,7 +19,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "San4io\\Tests\\": "tests/"
         }
     },
     "extra": {
